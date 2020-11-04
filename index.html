@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <style>
+        body{
+            font-size: 1rem;
+        }
         .winner {
             color: aqua
         }
@@ -21,17 +25,36 @@
 
 <body>
 
-
-
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-    <select name="playTo" id="playTo">
-        <option value="3">3</option>
-        <option value="5">5</option>
-        <option value="7">7</option>
-    </select>
-    <button id="p1Button">Player 1</button>
-    <button id="p2Button">Player 2</button>
-    <button id="reset">Reset!</button>
+<div class="container">
+    <div class="columns">
+        <div class="column is-half  is-offset-one-quarter mt-6">
+            <div class="card is-centered">
+                <header class="card-header">
+                    <p class="card-header-title is-centered">
+                        Tennis Score Keeper
+                    </p>
+                  
+                </header>
+                <div class="card-content ">
+                    <div class="content ">
+                        <h1 class="title is-1 is-centered"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <p class="subTitle is-centered">Use bottons below to keep score</p>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <select name="playTo" id="playTo" class="card-footer-item is-size-4">
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="7">7</option>
+                        </select>
+                        <button id="p1Button" class="button is-primary is-large card-footer-item">Player 1</button>
+                        <button id="p2Button" class="button is-warnnig is-large card-footer-item">Player 2</button>
+                        <button id="reset" class="button is-danger is-large card-footer-item">Reset!</button>
+                        </footer>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
 
 
     <script src="app.js"></script>
